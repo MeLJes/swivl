@@ -1,0 +1,10 @@
+.account__name {
+  color: #3E4056;
+  font-family: var(--font-default);
+  font-size: px-to-rem(16);
+  font-weight: weight(regular);
+  line-height: px-to-rem(20);
+  letter-spacing: px-to-rem(-0.5);
+  margin-right: px-to-rem(20); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tcG9uZW50cy9hY2NvdW50L19fbmFtZS9hY2NvdW50X19uYW1lLmNzcyIsInNvdXJjZXMiOlsiY29tcG9uZW50cy9hY2NvdW50L19fbmFtZS9hY2NvdW50X19uYW1lLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmFjY291bnRfX25hbWUge1xyXG4gIGNvbG9yOiAjM0U0MDU2O1xyXG4gIGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LWRlZmF1bHQpO1xyXG4gIGZvbnQtc2l6ZTogcHgtdG8tcmVtKDE2KTtcclxuICBmb250LXdlaWdodDogd2VpZ2h0KHJlZ3VsYXIpO1xyXG4gIGxpbmUtaGVpZ2h0OiBweC10by1yZW0oMjApO1xyXG4gIGxldHRlci1zcGFjaW5nOiBweC10by1yZW0oLTAuNSk7XHJcbiAgbWFyZ2luLXJpZ2h0OiBweC10by1yZW0oMjApO1xyXG59XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxBQUFBLGNBQWMsQ0FBQztFQUNiLEtBQUssRUFBRSxPQUFPO0VBQ2QsV0FBVyxFQUFFLG1CQUFtQjtFQUNoQyxTQUFTLEVBQUUsYUFBYTtFQUN4QixXQUFXLEVBQUUsZUFBZTtFQUM1QixXQUFXLEVBQUUsYUFBYTtFQUMxQixjQUFjLEVBQUUsZUFBZTtFQUMvQixZQUFZLEVBQUUsYUFBYSxHQUM1QiJ9 */

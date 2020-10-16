@@ -13,6 +13,7 @@
 
   <style>
     :root {
+      /* Colors */
       --default: #3E3F58;
       --default-alt: #3E4056;
       --primary: #ED5267;
@@ -27,6 +28,10 @@
       --success: #b1d845;
       --warning: #ffeaa7;
       --error: #e41c1c;
+
+      /* Fonts */
+      --font-default: 'Open Sans', sans-serif;
+      --font-secondary: 'Arial', sans-serif;
     }
   </style>
 </head>
@@ -34,94 +39,32 @@
 
   <svg class="svg-sprite">
     <defs>
-      <!-- Icons form https://material.io/resources/icons/ -->
-
-      <!-- Controls -->
-      <symbol id="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z" />
-      </symbol><!-- #svg-top -->
-
-      <symbol id="svg-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
-      </symbol><!-- #svg-down -->
-
-      <symbol id="svg-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
-      </symbol><!-- #svg-left -->
-
-      <symbol id="svg-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
-      </symbol><!-- #svg-right -->
-
-      <symbol id="svg-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
-      </symbol><!-- #svg-close -->
-
-      <symbol id="svg-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M8 5v14l11-7z"/>
-      </symbol><!-- #svg-play -->
-
-
-      <!-- Other -->
-      <symbol id="svg-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-      </symbol><!-- #svg-search -->
-
-      <symbol id="svg-ex">
-      </symbol><!-- #svg-ex -->
-
-
-      <!-- Response output -->
-      <symbol id="svg-warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
-      </symbol><!-- #svg-warning -->
-
-      <symbol id="svg-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-      </symbol><!-- #svg-send -->
-
-
-      <!-- Loaders -->
-      <symbol id="svg-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44"
-        stroke="var(--primary)">
-        <g fill="none" fill-rule="evenodd" stroke-width="2">
-          <circle cx="22" cy="22" r="1">
-            <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
-              keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
-              keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
-          </circle>
-          <circle cx="22" cy="22" r="1">
-            <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
-              keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
-              keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
-          </circle>
-        </g>
-      </symbol><!-- #svg-loader -->
-
-      <symbol id="svg-preloader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
-        <defs>
-          <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
-            <stop stop-color="var(--primary)" stop-opacity="0" offset="0%" />
-            <stop stop-color="var(--primary)" stop-opacity=".631" offset="63.146%" />
-            <stop stop-color="var(--primary)" offset="100%" />
-          </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-          <g transform="translate(1 1)">
-            <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
-              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s"
-                repeatCount="indefinite" />
-            </path>
-            <circle fill="var(--primary)" cx="36" cy="18" r="1">
-              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s"
-                repeatCount="indefinite" />
-            </circle>
+      <!-- Header -->
+      <symbol id="header__notifications" viewBox="0 0 32 32">
+        <g id="notifications" opacity="0.98">
+          <rect id="Rectangle 2 Copy 3" opacity="0.01" width="32" height="32" fill="#EFF3F6" />
+          <g id="Shape">
+            <mask id="path-2-inside-1" fill="white">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.6471 22.4C17.6471 23.28 16.9059 24 16 24C15.0941 24 14.3529 23.28 14.3529 22.4H15.6471H16H16.3529H17.6471ZM16 11.512L15.2133 11.693C13.6977 12.0419 12.6471 13.336 12.6471 14.8V19.2V19.6H20.9644L21.3529 19.2L21.7647 19.6L23 20.8V21.6H22.2229H21H20.9532H11.0468H11H9.77714H9V20.8L10.2353 19.6L10.6471 19.2V14.8C10.6471 12.344 12.4012 10.288 14.7647 9.744V9.2C14.7647 8.536 15.3165 8 16 8C16.6835 8 17.2353 8.536 17.2353 9.2V9.744C19.5988 10.288 21.3529 12.344 21.3529 14.8V19.2H19.3529V14.8C19.3529 13.336 18.3023 12.0419 16.7867 11.693L16 11.512Z" />
+            </mask>
+            <path
+              d="M17.6471 22.4H19.6471V20.4H17.6471V22.4ZM14.3529 22.4V20.4H12.3529V22.4H14.3529ZM15.2133 11.693L15.6619 13.6421H15.6619L15.2133 11.693ZM16 11.512L16.4486 9.56293L16 9.45968L15.5514 9.56293L16 11.512ZM12.6471 19.6H10.6471V21.6H12.6471V19.6ZM20.9644 19.6V21.6H21.8098L22.3989 20.9936L20.9644 19.6ZM21.7647 19.6L20.3711 21.0346L21.7647 19.6ZM23 20.8H25V19.9545L24.3936 19.3654L23 20.8ZM23 21.6V23.6H25V21.6H23ZM9 21.6H7V23.6H9V21.6ZM9 20.8L7.60643 19.3654L7 19.9545V20.8H9ZM10.2353 19.6L8.84172 18.1654H8.84172L10.2353 19.6ZM10.6471 19.2L12.0406 20.6346L12.6471 20.0455V19.2H10.6471ZM14.7647 9.744L15.2133 11.693L16.7647 11.336V9.744H14.7647ZM17.2353 9.744H15.2353V11.336L16.7867 11.693L17.2353 9.744ZM19.3529 19.2H17.3529V21.2H19.3529V19.2ZM16.7867 11.693L16.3381 13.6421H16.3381L16.7867 11.693ZM16 26C17.9554 26 19.6471 24.4388 19.6471 22.4H15.6471C15.6471 22.1212 15.8564 22 16 22V26ZM12.3529 22.4C12.3529 24.4388 14.0446 26 16 26V22C16.1436 22 16.3529 22.1212 16.3529 22.4H12.3529ZM15.6471 20.4H14.3529V24.4H15.6471V20.4ZM16 20.4H15.6471V24.4H16V20.4ZM16.3529 20.4H16V24.4H16.3529V20.4ZM17.6471 20.4H16.3529V24.4H17.6471V20.4ZM15.6619 13.6421L16.4486 13.461L15.5514 9.56293L14.7647 9.744L15.6619 13.6421ZM14.6471 14.8C14.6471 14.3205 15.0019 13.794 15.6619 13.6421L14.7647 9.744C12.3935 10.2898 10.6471 12.3515 10.6471 14.8H14.6471ZM14.6471 19.2V14.8H10.6471V19.2H14.6471ZM14.6471 19.6V19.2H10.6471V19.6H14.6471ZM20.9644 17.6H12.6471V21.6H20.9644V17.6ZM19.9184 17.8064L19.5298 18.2064L22.3989 20.9936L22.7875 20.5936L19.9184 17.8064ZM23.1583 18.1654L22.7465 17.7654L19.9594 20.6346L20.3711 21.0346L23.1583 18.1654ZM24.3936 19.3654L23.1583 18.1654L20.3711 21.0346L21.6064 22.2346L24.3936 19.3654ZM25 21.6V20.8H21V21.6H25ZM22.2229 23.6H23V19.6H22.2229V23.6ZM21 23.6H22.2229V19.6H21V23.6ZM20.9532 23.6H21V19.6H20.9532V23.6ZM11.0468 23.6H20.9532V19.6H11.0468V23.6ZM11 23.6H11.0468V19.6H11V23.6ZM9.77714 23.6H11V19.6H9.77714V23.6ZM9 23.6H9.77714V19.6H9V23.6ZM7 20.8V21.6H11V20.8H7ZM8.84172 18.1654L7.60643 19.3654L10.3936 22.2346L11.6289 21.0346L8.84172 18.1654ZM9.25349 17.7654L8.84172 18.1654L11.6289 21.0346L12.0406 20.6346L9.25349 17.7654ZM8.64706 14.8V19.2H12.6471V14.8H8.64706ZM14.3161 7.79496C11.1046 8.53413 8.64706 11.352 8.64706 14.8H12.6471C12.6471 13.336 13.6977 12.0419 15.2133 11.693L14.3161 7.79496ZM12.7647 9.2V9.744H16.7647V9.2H12.7647ZM16 6C14.2669 6 12.7647 7.37718 12.7647 9.2H16.7647C16.7647 9.69482 16.366 10 16 10V6ZM19.2353 9.2C19.2353 7.37718 17.7331 6 16 6V10C15.634 10 15.2353 9.69482 15.2353 9.2H19.2353ZM19.2353 9.744V9.2H15.2353V9.744H19.2353ZM23.3529 14.8C23.3529 11.352 20.8954 8.53413 17.6839 7.79496L16.7867 11.693C18.3023 12.0419 19.3529 13.336 19.3529 14.8H23.3529ZM23.3529 19.2V14.8H19.3529V19.2H23.3529ZM19.3529 21.2H21.3529V17.2H19.3529V21.2ZM17.3529 14.8V19.2H21.3529V14.8H17.3529ZM16.3381 13.6421C16.9981 13.794 17.3529 14.3205 17.3529 14.8H21.3529C21.3529 12.3515 19.6065 10.2898 17.2353 9.744L16.3381 13.6421ZM15.5514 13.461L16.3381 13.6421L17.2353 9.744L16.4486 9.56293L15.5514 13.461Z"
+              fill="#3E4056" mask="url(#path-2-inside-1)" />
           </g>
         </g>
-      </symbol><!-- #svg-preloader -->
+      </symbol><!-- #header__notifications -->
 
+      <symbol id="header__account-arrow" viewBox="0 0 16 16" fill="none">
+        <g opacity="0.4">
+          <path d="M4 6L8 10L12 6" stroke="#3E4056" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </symbol><!-- #header__notifications -->
+
+      <symbol id="header__add-article" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.9091 0H9.09091V9.09091H0V10.9091H9.09091V20H10.9091V10.9091H20V9.09091H10.9091V0Z" fill="white" />
+      </symbol><!-- #header__add-article -->
     </defs>
   </svg><!-- .svg-sprite -->
 
@@ -135,16 +78,116 @@
     </div><!-- .spinner -->
   </div><!-- .loader -->
 
-
-
-
   <div class="main-content" role="main">
-    <header class="main-content__header header">
-      <div class="header__container container">
+    <header class="header main-content__header">
+      <div class="container header__container">
 
+        <div class="header__row">
+          <div class="logo header__logo">
+            <a href="#" class="logo__link">
+              <img src="images/logo.svg" alt="Swivl - Logo" class="logo__img" />
+            </a>
+          </div><!-- .logo -->
+
+          <div class="account header__account">
+            <div class="account__panel">
+              <h4 class="account__name">Arthur Wood</h4><!-- .account__name -->
+
+              <div class="account__avatar">
+                <img src="images/account__avatar.png" alt="Swivl - Account avatar" class="account__avatar-img" />
+              </div><!-- .account__avatar -->
+
+              <div class="dropdown account__dropdown">
+                <button type="button" title="Account preference" class="dropdown__arrow">
+                  <svg class="dropdown__icon">
+                    <use xlink:href="#header__account-arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="dropdown__list"></div><!-- .account__preference -->
+              </div><!-- .account__dropdown -->
+            </div><!-- .account__panel -->
+
+            <div class="account__controls">
+              <a href="#" class="btn-icon" title="Notifications">
+                <img src="icons/header-notifications.svg" alt="" class="btn-icon__img" />
+              </a>
+
+              <a href="#" class="btn-icon" title="Share & Recap">
+                <img src="icons/header-share-recap.svg" alt="" class="btn-icon__img" />
+              </a>
+
+              <a href="#" class="btn-icon" title="Medium">
+                <img src="icons/header-medium.svg" alt="" class="btn-icon__img" />
+              </a>
+            </div><!-- .account__controls -->
+          </div><!-- .account -->
+        </div><!-- .header__row -->
+
+        <div class="header__row">
+          <nav class="navigation header__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--active">FEED</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">EXPLORE</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">DISCUSSIONS</a>
+              </li>
+            </ul>
+          </nav><!-- .header__nav -->
+
+          <button type="button" class="btn-add" title="Add new article">
+            <svg class="btn-add__icon">
+              <use xlink:href="#header__add-article"></use>
+            </svg>
+          </button>
+        </div><!-- .header__row -->
 
       </div><!-- .container -->
     </header><!-- .header -->
+
+    <div class="container main-content__container">
+      <aside class="user">
+        <div class="user__profile">
+          <div class="user__avatar">
+            <img src="images/user__avatar.png" alt="Swivl - User avatar" class="user__avatar-img" />
+          </div><!-- .user__avatar -->
+
+          <div class="user__details">
+            <div class="user__name"></div><!-- .user__name -->
+
+            <div class="user__id"></div><!-- .user__id -->
+
+            <div class="user__edit dropdown">
+              <button type="button" class="dropdown__btn"></button>
+
+              <div class="dropdown__list"></div><!-- .dropdown__list -->
+            </div><!-- .user__edit -->
+          </div><!-- .user__details -->
+
+          <div class="user__actions"></div><!-- .user__actions -->
+        </div><!-- .user__profile -->
+
+        <div class="user__stats"></div><!-- .user__stats -->
+
+        <div class="user__desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea cupiditate provident maxime quas voluptatem est ad dolore mollitia corporis dicta.
+        </div><!-- .user__desc -->
+      </aside><!-- .user -->
+
+      <section class="articles">
+        <div class="articles__switcher"></div><!-- .articles__switcher -->
+
+        <div class="articles__list">
+          <article class="articles__item articles__item--type-1"></article>
+        </div><!-- .articles__list -->
+      </section><!-- .articles -->
+    </div><!-- .container -->
   </div><!-- .main-content -->
 
 
