@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Swivl</title>
+
+  <link rel="icon" href="images/favicon.png" type="images/x-icon" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    :root {
+      --default: #3E3F58;
+      --default-alt: #3E4056;
+      --primary: #ED5267;
+      --secondary: #ECF1F8;
+
+      --white: #ffffff;
+      --black: #000000;
+      --gray: #808080;
+      --light-gray: #e0e0e0;
+      --dark-gray: #656565;
+
+      --success: #b1d845;
+      --warning: #ffeaa7;
+      --error: #e41c1c;
+    }
+  </style>
+</head>
+<body class="loading">
+
+  <svg class="svg-sprite">
+    <defs>
+      <!-- Icons form https://material.io/resources/icons/ -->
+
+      <!-- Controls -->
+      <symbol id="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z" />
+      </symbol><!-- #svg-top -->
+
+      <symbol id="svg-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+      </symbol><!-- #svg-down -->
+
+      <symbol id="svg-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
+      </symbol><!-- #svg-left -->
+
+      <symbol id="svg-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+      </symbol><!-- #svg-right -->
+
+      <symbol id="svg-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+      </symbol><!-- #svg-close -->
+
+      <symbol id="svg-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+      </symbol><!-- #svg-play -->
+
+
+      <!-- Other -->
+      <symbol id="svg-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </symbol><!-- #svg-search -->
+
+      <symbol id="svg-ex">
+      </symbol><!-- #svg-ex -->
+
+
+      <!-- Response output -->
+      <symbol id="svg-warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+      </symbol><!-- #svg-warning -->
+
+      <symbol id="svg-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+      </symbol><!-- #svg-send -->
+
+
+      <!-- Loaders -->
+      <symbol id="svg-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44"
+        stroke="var(--primary)">
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </symbol><!-- #svg-loader -->
+
+      <symbol id="svg-preloader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
+        <defs>
+          <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+            <stop stop-color="var(--primary)" stop-opacity="0" offset="0%" />
+            <stop stop-color="var(--primary)" stop-opacity=".631" offset="63.146%" />
+            <stop stop-color="var(--primary)" offset="100%" />
+          </linearGradient>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(1 1)">
+            <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
+              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s"
+                repeatCount="indefinite" />
+            </path>
+            <circle fill="var(--primary)" cx="36" cy="18" r="1">
+              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s"
+                repeatCount="indefinite" />
+            </circle>
+          </g>
+        </g>
+      </symbol><!-- #svg-preloader -->
+
+    </defs>
+  </svg><!-- .svg-sprite -->
+
+  <div class="loader">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Swivl - Logo" />
+    </div><!-- .logo -->
+
+    <div class="spinner">
+      <img src="icons/loaders/loader.svg" alt="Swivl - Preloader" />
+    </div><!-- .spinner -->
+  </div><!-- .loader -->
+
+
+
+
+  <div class="main-content" role="main">
+    <header class="main-content__header header">
+      <div class="header__container container">
+
+
+      </div><!-- .container -->
+    </header><!-- .header -->
+  </div><!-- .main-content -->
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
