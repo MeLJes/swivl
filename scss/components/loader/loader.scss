@@ -1,32 +1,41 @@
 .loader {
-  @include flex(flex, center, center, column);
-  @include position(extended, fixed, 0, 0, 0, 0);
-  @include touch(none);
-  @include tr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  user-select: none;
+  pointer-events: none;
 
   background: color(white);
   width: 100%;
   height: 100%;
   opacity: 1;
 
-  .logo {
+  &__logo {
     width: 50vw;
     max-width: px-to-rem(300);
     margin-bottom: px-to-rem(75);
 
-    img {
+    &-img {
       height: auto;
       width: 100%;
       max-width: px-to-rem(300);
       margin: 0 auto;
     }
   }
-  .spinner {
+  &__spinner {
     width: px-to-rem(70);
     height: px-to-rem(70);
 
-    img,
-    svg {
+    &-img {
       width: 100%;
     }
   }
@@ -34,7 +43,8 @@
 
 body {
   .main-content {
-    @include touch(none);
+    user-select: none;
+    pointer-events: none;
 
     opacity: 0;
   }
@@ -48,7 +58,8 @@ body {
       opacity: 0;
     }
     .main-content {
-      @include touch(auto);
+      user-select: auto;
+      pointer-events: auto;
 
       opacity: 1;
     }

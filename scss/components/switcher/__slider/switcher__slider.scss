@@ -1,0 +1,29 @@
+.switcher__slider {
+  background-color: color(default);
+  border-radius: px-to-rem(24);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &,
+  &::before {
+    transition: all 0.4s ease-in-out;
+  }
+  &::before {
+    content: '';
+    border-radius: 50%;
+    width: px-to-rem(18);
+    height: px-to-rem(18);
+    background-color: color(white);
+    transform: translateY(-50%);
+
+    position: absolute;
+    top: 50%;
+    left: px-to-rem(4);
+  }
+}

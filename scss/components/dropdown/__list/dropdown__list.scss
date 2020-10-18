@@ -1,0 +1,23 @@
+.dropdown__list {
+  background: color(white);
+  backdrop-filter: blur(21.7463px);
+  mix-blend-mode: normal;
+  box-shadow: 1px 24px 24px rgba(0, 0, 0, 0.06);
+  border-radius: px-to-rem(8);
+  opacity: 0.94;
+  width: px-to-rem(180);
+  padding: px-to-rem(24) 0;
+  transition: all 0.2s ease-in-out;
+
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: auto;
+
+  &--pos-right {
+    right: 0;
+  }
+  &--pos-left {
+    left: 0;
+  }
+}

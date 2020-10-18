@@ -1,0 +1,8 @@
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  background: color(white);
+  box-shadow: 1px 24px 24px rgba(0, 0, 0, 0.06);
+  border-radius: px-to-rem(8);
+  max-width: px-to-rem(375);
+}

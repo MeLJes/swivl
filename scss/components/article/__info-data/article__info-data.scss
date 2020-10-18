@@ -1,0 +1,8 @@
+.article__info-data {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: px-to-em(16);
+  }
+}

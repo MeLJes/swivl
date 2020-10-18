@@ -1,0 +1,7 @@
+.dropdown__list--inactive {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+
+  transform: translateY(25px);
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap');
 
 // --- Helpers
 @import "helpers/variables";
@@ -13,23 +13,43 @@
 @import "base/base";
 
 // --- Components
-@import "components/loader";
+@import "components/loader/loader";
+@import "components/logo/logo";
+
+/* Dropdown */
+@import "components/dropdown/dropdown";
+@import "components/dropdown/__list/dropdown__list";
+@import "components/dropdown/__item/dropdown__item";
+/* Dropdown: State */
+@import "components/dropdown/__list/--inactive/dropdown__list--inactive";
+
+/* Switcher (privacy) */
+@import "components/switcher/switcher";
+@import "components/switcher/__label/switcher__label";
+@import "components/switcher/__input/switcher__input";
+@import "components/switcher/__slider/switcher__slider";
+@import "components/switcher/__option/switcher__option";
+
+/* Main content */
 @import "components/main-content/__header/main-content__header";
+@import "components/main-content/__container/main-content__container";
+
+/* Header */
 @import "components/header/header";
 @import "components/header/__row/header__row";
-@import "components/logo/logo";
-@import "components/btns/btn-icon";
-@import "components/btns/btn-add";
-@import "components/dropdown/dropdown";
+/* Header: account */
 @import "components/account/account";
 @import "components/account/__panel/account__panel";
 @import "components/account/__name/account__name";
 @import "components/account/__avatar/account__avatar";
 @import "components/account/__dropdown/account__dropdown";
 @import "components/account/__controls/account__controls";
+@import "components/btns/btn-icon";
+/* Header: navigation */
 @import "components/navigation/navigation";
+@import "components/btns/btn-add";
 
-// ------ User
+/* User */
 @import "components/user/user";
 /* User: Profile */
 @import "components/user/__profile/user__profile";
@@ -47,3 +67,27 @@
 @import "components/user/__stat/user__stat";
 /* User: Description */
 @import "components/user/__desc/user__desc";
+
+/* Articles */
+@import "components/articles/articles";
+@import "components/articles/__list/articles__list";
+@import "components/articles/__item/articles__item";
+@import "components/articles/__switcher/articles__switcher";
+@import "components/article/article";
+@import "components/article/__title/article__title";
+@import "components/article/__details/article__details";
+@import "components/article/__author/article__author";
+@import "components/article/__author-avatar/article__author-avatar";
+@import "components/article/__author-img/article__author-img";
+@import "components/article/__author-name/article__author-name";
+@import "components/article/__share/article__share";
+@import "components/article/__shared/article__shared";
+@import "components/article/__shared/--hidden/article__shared--hidden";
+@import "components/article/__shared-text/article__shared-text";
+@import "components/article/__shared-to/article__shared-to";
+@import "components/article/__info/article__info";
+@import "components/article/__info-data/article__info-data";
+@import "components/article/__info-text/article__info-text";
+/* Articles: Type */
+@import "components/articles/__item/--type-1/articles__item--type-1";
+@import "components/articles/__item/--type-2/articles__item--type-2";

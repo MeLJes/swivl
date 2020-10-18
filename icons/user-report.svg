@@ -1,0 +1,8 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <title>user-report</title>
+  <rect width="20" height="20" style="fill: #c3cadf;opacity: 0.009999999776482582;isolation: isolate"/>
+  <path d="M4,17a2,2,0,0,1-2-2V3A2,2,0,0,1,4,1H14a2,2,0,0,1,2,2V4" style="fill: none;stroke: #3e4056;stroke-width: 2px"/>
+  <path d="M6,4h6a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H6A1,1,0,0,1,5,5H5A1,1,0,0,1,6,4Z" style="fill: #3e4056"/>
+  <path d="M5,9A1,1,0,0,1,6,8h4L8,10H6A1,1,0,0,1,5,9Z" style="fill: #3e4056"/>
+  <path d="M19.55,9.76,16.72,6.93a2,2,0,0,0-2.83,0L6.95,13.87a.5.5,0,0,0-.14.3l-.39,3.64A2,2,0,0,0,8.58,20l3.71-.35a.5.5,0,0,0,.31-.14l6.94-6.94A2,2,0,0,0,19.55,9.76Zm-7.78,7.78-2.06.41a1,1,0,0,1-1.18-1.18l.41-2.06,3.54-3.54L15.31,14Zm5.66-5.66-.71.71L13.89,9.76,14.6,9A1,1,0,0,1,16,9l1.41,1.41A1,1,0,0,1,17.43,11.88Z" style="fill: #3e4056"/>
+</svg>

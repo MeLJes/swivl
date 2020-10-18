@@ -1,0 +1,11 @@
+.article__shared-to {
+  background: #ECF1F8;
+  border-radius: px-to-rem(6);
+  padding: px-to-rem(4);
+  width: 100%;
+  max-width: px-to-rem(250);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

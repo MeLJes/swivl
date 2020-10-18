@@ -17,7 +17,9 @@
 
   // --- Main
   document.addEventListener('DOMContentLoaded', () => {
-
+    [...document.getElementsByClassName('dropdown__btn')].forEach(button => {
+      button.addEventListener('click', event => button.nextElementSibling.classList.toggle('dropdown__list--inactive'));
+    });
   });
 
   // --- Events

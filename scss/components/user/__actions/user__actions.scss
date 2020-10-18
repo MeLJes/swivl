@@ -1,3 +1,21 @@
 .user__actions {
+  position: relative;
 
+  .dropdown__btn {
+    width: px-to-rem(24);
+    height: px-to-rem(24);
+
+    &-icon {
+      fill: color(default);
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      .dropdown__btn-icon {
+        fill: color(primary);
+      }
+    }
+  }
+  .dropdown__list {
+    top: px-to-rem(44);
+  }
 }

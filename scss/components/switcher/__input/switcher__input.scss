@@ -1,0 +1,12 @@
+.switcher__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+
+  &:checked + .switcher__slider {
+    background-color: color(primary);
+  }
+  &:checked + .switcher__slider:before {
+    transform: translate(calc(100% - 4px), -50%);
+  }
+}

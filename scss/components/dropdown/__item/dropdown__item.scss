@@ -1,0 +1,25 @@
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: px-to-rem(8) px-to-rem(24);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: #ECF1F8;
+  }
+  &-icon {
+    fill: color(default);
+    margin-right: px-to-rem(15);
+    width: px-to-rem(20);
+    height: px-to-rem(20);
+  }
+  &-label {
+    font-weight: weight(semi-bold);
+    line-height: px-to-rem(22);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

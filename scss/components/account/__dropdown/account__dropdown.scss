@@ -1,4 +1,28 @@
 .account__dropdown {
-  // margin: 0 px-to-rem(20) 0 px-to-rem(8);
   margin-left: px-to-rem(8);
+
+  .dropdown {
+    &__btn {
+      width: px-to-rem(20);
+      height: px-to-rem(20);
+
+      z-index: 1;
+      position: relative;
+    }
+    &__icon {
+      width: px-to-rem(16);
+      height: px-to-rem(16);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+
+    &__list {
+      position: absolute;
+      top: px-to-rem(32);
+      right: 0;
+    }
+  }
 }

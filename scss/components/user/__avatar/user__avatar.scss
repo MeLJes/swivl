@@ -4,4 +4,6 @@
   height: px-to-rem(120);
   margin-right: px-to-rem(24);
   overflow: hidden;
+
+  flex-shrink: 0;
 }

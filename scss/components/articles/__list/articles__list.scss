@@ -1,0 +1,5 @@
+.articles__list {
+  display: grid;
+  grid-gap: px-to-rem(24);
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
