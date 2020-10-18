@@ -13,3 +13,19 @@
     }
   }
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .articles__item--type-1 {
+    padding: px-to-rem(24);
+  }
+}
+@media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(small-max)) {
+  .articles__item--type-1 {
+    padding: px-to-rem(36) px-to-rem(24) px-to-rem(24);
+  }
+}
+@media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(medium-max)) {
+  .articles__item--type-1 {
+    padding: px-to-rem(44) px-to-rem(24) px-to-rem(24);
+  }
+}

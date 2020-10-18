@@ -1,0 +1,15 @@
+.form__input {
+  display: block;
+  border-bottom: px-to-rem(1) solid rgba(000,000,000,0.2);
+  width: 100%;
+  max-width: 78%;
+  padding: px-to-rem(4) px-to-rem(8);
+  margin-left: px-to-rem(15);
+}
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .form__input {
+    max-width: 100%;
+    margin: px-to-rem(10) 0 0;
+  }
+}

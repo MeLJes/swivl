@@ -46,3 +46,23 @@
     position: relative;
   }
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .btn-add {
+    width: px-to-rem(48);
+    height: px-to-rem(48);
+    transform: none;
+
+    z-index: z(overlay);
+    position: fixed;
+    top: auto;
+    right: px-to-rem(10);
+    bottom: px-to-rem(10);
+  }
+}
+@media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(small-max)) {
+  .btn-add {
+    width: px-to-rem(48);
+    height: px-to-rem(48);
+  }
+}

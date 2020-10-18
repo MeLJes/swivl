@@ -11,10 +11,11 @@ html {
   }
 }
 body {
+  background: color(secondary);
   color: color(default);
   position: relative;
 
-  @include flex(flex, flex-start, stretch, column);
+  // @include flex(flex, flex-start, stretch, column);
 }
 *:not(img) {
   outline: none;

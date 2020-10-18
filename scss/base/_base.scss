@@ -1,11 +1,4 @@
 // --- Sections
-.main-content {
-  @include flex(flex, flex-start, flex-start, column);
-  @include tr;
-
-  background: color(secondary);
-  height: 100%;
-}
 .container {
   width: 100%;
   max-width: px-to-rem(1180);

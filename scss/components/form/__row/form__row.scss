@@ -1,0 +1,7 @@
+.form__row {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: px-to-rem(20);
+  }
+}

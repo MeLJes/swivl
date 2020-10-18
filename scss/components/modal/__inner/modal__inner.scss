@@ -1,0 +1,10 @@
+.modal__inner {
+  background: color(white);
+  border-radius: px-to-rem(8);
+  text-align: center;
+  width: 90%;
+  padding: px-to-rem(50);
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}

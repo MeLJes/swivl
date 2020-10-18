@@ -289,7 +289,7 @@
                 </button>
 
                 <div class="dropdown__list dropdown__list--pos-right dropdown__list--inactive">
-                  <button type="button" class="dropdown__item">
+                  <a href="#" class="dropdown__item">
                     <div class="dropdown__item-icon">
                       <svg class="dropdown__item-icon-img">
                         <use xlink:href="#header__account-settings"></use>
@@ -297,7 +297,7 @@
                     </div>
 
                     <div class="dropdown__item-label">Settings</div>
-                  </button>
+                  </a>
 
                   <button type="button" class="dropdown__item">
                     <div class="dropdown__item-icon">
@@ -379,13 +379,13 @@
             <h4 class="user__id">@benclementine</h4><!-- .user__id -->
 
             <div class="user__edit">
-              <button type="button" class="user__edit-btn">
+              <a href="#" class="user__edit-btn">
                 <svg class="user__edit-icon">
                   <use xlink:href="#user__edit"></use>
                 </svg>
 
                 <span class="user__edit-text">Edit Profile</span>
-              </button>
+              </a>
             </div><!-- .user__edit -->
           </div><!-- .user__details -->
 
@@ -397,7 +397,7 @@
             </button>
 
             <div class="dropdown__list dropdown__list--pos-left dropdown__list--inactive">
-              <button type="button" class="dropdown__item">
+              <button type="button" class="user__report dropdown__item">
                 <div class="dropdown__item-icon">
                   <svg class="dropdown__item-icon-img">
                     <use xlink:href="#user__report"></use>
@@ -407,7 +407,7 @@
                 <div class="dropdown__item-label">Report User</div>
               </button>
 
-              <button type="button" class="dropdown__item">
+              <button type="button" class="user__block dropdown__item">
                 <div class="dropdown__item-icon">
                   <svg class="dropdown__item-icon-img">
                     <use xlink:href="#user__block"></use>
@@ -566,13 +566,13 @@
               </div><!-- .article__author -->
 
               <div class="article__info">
-                <div class="article__info-data">
+                <div class="article__info-data" title="Articles views">
                   <img src="icons/articles-view.svg" alt="Swivl - Article views" class="article__info-icon" />
 
                   <span class="article__info-text">88</span>
                 </div><!-- .article__info-data -->
 
-                <div class="article__info-data">
+                <div class="article__info-data" title="Articles likes">
                   <img src="icons/articles-like.svg" alt="Swivl - Article likes" class="article__info-icon" />
 
                   <span class="article__info-text">24</span>
@@ -607,13 +607,13 @@
               </div><!-- .article__author -->
 
               <div class="article__info">
-                <div class="article__info-data">
+                <div class="article__info-data" title="Articles views">
                   <img src="icons/articles-view.svg" alt="Swivl - Article views" class="article__info-icon" />
 
                   <span class="article__info-text">88</span>
                 </div><!-- .article__info-data -->
 
-                <div class="article__info-data">
+                <div class="article__info-data" title="Articles likes">
                   <img src="icons/articles-like.svg" alt="Swivl - Article likes" class="article__info-icon" />
 
                   <span class="article__info-text">24</span>
@@ -626,6 +626,91 @@
     </div><!-- .container -->
   </div><!-- .main-content -->
 
+  <!-- Modal windows -->
+  <div class="modal modal--hidden modal--report">
+    <div class="modal__inner">
+      <button class="modal__close">
+        <svg class="modal__close-img">
+          <use xlink:href="#user__block"></use>
+        </svg>
+      </button><!-- .modal__close -->
+
+      <h3 class="modal__title">Report user</h3>
+
+      <form action="" class="form modal__form-report">
+        <div class="form__row">
+          <label class="form__label">Your name <input type="text" class="form__input"></label>
+        </div><!-- .form__row -->
+
+        <div class="form__row">
+          <label class="form__label">Your Email <input type="text" class="form__input"></label>
+        </div><!-- .form__row -->
+
+        <div class="form__row">
+          <label class="form__label">Reason <textarea type="textarea" class="form__textarea"></textarea></label>
+        </div><!-- .form__row -->
+
+        <div class="form__row">
+          <button type="submit" class="modal__btn">
+            <span class="modal__btn-text">Report</span>
+          </button>
+        </div><!-- .form__row -->
+      </form><!-- .modal__form-report -->
+    </div><!-- .modal__inner -->
+  </div><!-- .modal--report -->
+
+  <div class="modal modal--hidden modal--block">
+    <div class="modal__inner">
+      <button class="modal__close">
+        <svg class="modal__close-img">
+          <use xlink:href="#user__block"></use>
+        </svg>
+      </button><!-- .modal__close -->
+
+      <h3 class="modal__title">Block this user?</h3>
+
+      <form action="" class="form modal__form-block">
+        <div class="switcher modal__switcher">
+          <span class="switcher__option">No</span><!-- .switcher__label -->
+
+          <label class="switcher__label">
+            <input type="checkbox" class="switcher__input" checked>
+            <span class="switcher__slider"></span>
+          </label><!-- .switcher__label -->
+
+          <span class="switcher__option">Yes</span><!-- .switcher__label -->
+        </div><!-- .articles__switcher -->
+      </form><!-- .modal__form-report -->
+    </div><!-- .modal__inner -->
+  </div><!-- .modal--block -->
+
+  <div class="modal modal--hidden modal--add-article">
+    <div class="modal__inner">
+      <button class="modal__close">
+        <svg class="modal__close-img">
+          <use xlink:href="#user__block"></use>
+        </svg>
+      </button><!-- .modal__close -->
+
+      <h3 class="modal__title">Add new article</h3>
+
+      <form action="" class="form modal__form-add-article">
+        <div class="form__row">
+          <label class="form__label">Title <input type="text" class="form__input"></label>
+        </div><!-- .form__row -->
+
+        <div class="form__row">
+          <label class="form__label">Text <textarea type="textarea" class="form__textarea"></textarea></label>
+        </div><!-- .form__row -->
+
+        <div class="form__row">
+          <button type="submit" class="modal__btn">
+            <span class="modal__btn-text">Submit</span>
+          </button>
+        </div><!-- .form__row -->
+      </form><!-- .modal__form-report -->
+    </div><!-- .modal__inner -->
+  </div><!-- .modal--add-article -->
 
   <script src="js/main.js"></script>
 </body>

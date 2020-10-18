@@ -21,3 +21,9 @@
     left: 0;
   }
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .dropdown__list {
+    padding: px-to-rem(16) 0;
+  }
+}

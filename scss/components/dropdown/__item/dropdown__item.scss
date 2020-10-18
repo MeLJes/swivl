@@ -1,6 +1,7 @@
 .dropdown__item {
   display: flex;
   align-items: center;
+  color: color(default);
   width: 100%;
   padding: px-to-rem(8) px-to-rem(24);
   transition: all 0.2s ease-in-out;

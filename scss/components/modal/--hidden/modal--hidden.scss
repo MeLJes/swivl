@@ -1,0 +1,9 @@
+.modal--hidden {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+
+  .modal__inner {
+    transform: translateY(50px);
+  }
+}

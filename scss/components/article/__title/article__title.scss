@@ -5,3 +5,18 @@
   line-height: px-to-rem(44);
   margin-bottom: px-to-rem(45);
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .article__title {
+    font-size: px-to-rem(20);
+    line-height: px-to-rem(30);
+    margin-bottom: px-to-rem(24);
+  }
+}
+@media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(small-max)) {
+  .article__title {
+    font-size: px-to-rem(24);
+    line-height: px-to-rem(34);
+    margin-bottom: px-to-rem(24);
+  }
+}

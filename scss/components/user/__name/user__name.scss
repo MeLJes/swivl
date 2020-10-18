@@ -5,3 +5,9 @@
   line-height: px-to-rem(26);
   margin-bottom: px-to-rem(8);
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .user__name {
+    font-size: px-to-rem(20);
+  }
+}

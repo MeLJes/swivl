@@ -3,3 +3,10 @@
 
   flex: 1;
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .articles {
+    width: 100%;
+    margin: px-to-rem(40) auto;
+  }
+}

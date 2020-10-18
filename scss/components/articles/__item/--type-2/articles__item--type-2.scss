@@ -4,16 +4,6 @@
   .article__share {
     margin-bottom: px-to-rem(10);
 
-    &-btn {
-      display: flex;
-      align-items: center;
-      color: color(default);
-      transition: opacity 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 0.75;
-      }
-    }
     &-text {
       display: block;
       font-size: px-to-rem(16);

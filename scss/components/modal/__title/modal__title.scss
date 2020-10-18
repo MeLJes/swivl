@@ -1,0 +1,11 @@
+.modal__title {
+  font-size: px-to-rem(24);
+  margin-bottom: px-to-rem(35);
+}
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .modal__title {
+    font-size: px-to-rem(20);
+    margin-bottom: px-to-rem(30);
+  }
+}

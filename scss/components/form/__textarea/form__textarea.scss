@@ -1,0 +1,17 @@
+.form__textarea {
+  display: block;
+  border-bottom: px-to-rem(1) solid rgba(000,000,000,0.2);
+  margin-left: px-to-rem(15);
+  width: 100%;
+  max-width: 78%;
+  height: px-to-rem(27);
+  padding: px-to-rem(4) px-to-rem(8);
+  resize: vertical;
+}
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .form__textarea {
+    max-width: 100%;
+    margin: px-to-rem(10) 0 0;
+  }
+}

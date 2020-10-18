@@ -1,0 +1,10 @@
+.article__share-btn {
+  display: flex;
+  align-items: center;
+  color: color(default);
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

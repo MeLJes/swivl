@@ -1,3 +1,19 @@
 .articles__switcher {
   margin-bottom: px-to-rem(65);
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .articles__switcher {
+    margin-bottom: px-to-rem(25);
+  }
+}
+@media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(small-max)) {
+  .articles__switcher {
+    margin-bottom: px-to-rem(30);
+  }
+}
+@media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(medium-max)) {
+  .articles__switcher {
+    margin-bottom: px-to-rem(40);
+  }
+}

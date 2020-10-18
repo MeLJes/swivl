@@ -20,10 +20,30 @@
 @import "components/dropdown/dropdown";
 @import "components/dropdown/__list/dropdown__list";
 @import "components/dropdown/__item/dropdown__item";
-/* Dropdown: State */
 @import "components/dropdown/__list/--inactive/dropdown__list--inactive";
 
-/* Switcher (privacy) */
+/* Modal */
+@import "components/modal/modal";
+@import "components/modal/--hidden/modal--hidden";
+@import "components/modal/--report/modal--report";
+@import "components/modal/--block/modal--block";
+@import "components/modal/--add-article/modal--add-article";
+@import "components/modal/__inner/modal__inner";
+@import "components/modal/__close/modal__close";
+@import "components/modal/__btn/modal__btn";
+@import "components/modal/__btn-text/modal__btn-text";
+@import "components/modal/__title/modal__title";
+@import "components/modal/__form-report/modal__form-report";
+@import "components/modal/__switcher/modal__switcher";
+
+/* Dropdown */
+@import "components/form/form";
+@import "components/form/__row/form__row";
+@import "components/form/__label/form__label";
+@import "components/form/__input/form__input";
+@import "components/form/__textarea/form__textarea";
+
+/* Switcher */
 @import "components/switcher/switcher";
 @import "components/switcher/__label/switcher__label";
 @import "components/switcher/__input/switcher__input";
@@ -31,12 +51,14 @@
 @import "components/switcher/__option/switcher__option";
 
 /* Main content */
+@import "components/main-content/main-content";
 @import "components/main-content/__header/main-content__header";
 @import "components/main-content/__container/main-content__container";
 
 /* Header */
 @import "components/header/header";
 @import "components/header/__row/header__row";
+@import "components/header/__logo/header__logo";
 /* Header: account */
 @import "components/account/account";
 @import "components/account/__panel/account__panel";
@@ -81,6 +103,8 @@
 @import "components/article/__author-img/article__author-img";
 @import "components/article/__author-name/article__author-name";
 @import "components/article/__share/article__share";
+@import "components/article/__share-btn/article__share-btn";
+@import "components/article/__share-btn/--hidden/article__share-btn--hidden";
 @import "components/article/__shared/article__shared";
 @import "components/article/__shared/--hidden/article__shared--hidden";
 @import "components/article/__shared-text/article__shared-text";

@@ -8,3 +8,9 @@
     margin-bottom: px-to-rem(22);
   }
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .header__row {
+    flex-wrap: wrap;
+  }
+}

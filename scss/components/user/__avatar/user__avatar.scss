@@ -7,3 +7,10 @@
 
   flex-shrink: 0;
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .user__avatar {
+    width: px-to-rem(75);
+    height: px-to-rem(75);
+  }
+}

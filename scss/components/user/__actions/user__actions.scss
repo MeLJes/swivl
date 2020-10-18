@@ -19,3 +19,12 @@
     top: px-to-rem(44);
   }
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .user__actions {
+    .dropdown__list--pos-left {
+      left: auto;
+      right: 0;
+    }
+  }
+}

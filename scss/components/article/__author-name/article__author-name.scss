@@ -3,3 +3,12 @@
   font-size: px-to-rem(14);
   line-height: px-to-rem(19);
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .article__author-name  {
+    max-width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

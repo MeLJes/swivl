@@ -2,3 +2,11 @@
   display: flex;
   margin-left: px-to-rem(20);
 }
+
+@media screen and (max-width: breakpoint(zero-max)) {
+  .account__controls {
+    order: 1;
+
+    margin: 0 px-to-rem(20) 0 0;
+  }
+}

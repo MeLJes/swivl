@@ -7,3 +7,12 @@
   letter-spacing: px-to-rem(-0.5);
   margin-right: px-to-rem(20);
 }
+
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .account__name {
+    max-width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

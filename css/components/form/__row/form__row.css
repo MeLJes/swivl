@@ -1,0 +1,6 @@
+.form__row {
+  position: relative; }
+  .form__row:not(:last-child) {
+    margin-bottom: px-to-rem(20); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tcG9uZW50cy9mb3JtL19fcm93L2Zvcm1fX3Jvdy5jc3MiLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvZm9ybS9fX3Jvdy9mb3JtX19yb3cuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybV9fcm93IHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcblxyXG4gICY6bm90KDpsYXN0LWNoaWxkKSB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiBweC10by1yZW0oMjApO1xyXG4gIH1cclxufVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsQUFBQSxVQUFVLENBQUM7RUFDVCxRQUFRLEVBQUUsUUFBUSxHQUtuQjtFQU5ELEFBR0UsVUFIUSxBQUdQLElBQUssQ0FBQSxXQUFXLEVBQUU7SUFDakIsYUFBYSxFQUFFLGFBQWEsR0FDN0IifQ== */

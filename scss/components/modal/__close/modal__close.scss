@@ -1,0 +1,13 @@
+.modal__close {
+  width: px-to-rem(30);
+  height: px-to-rem(30);
+
+  z-index: 10;
+  position: absolute;
+  top: px-to-rem(10);
+  right: px-to-rem(10);
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

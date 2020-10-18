@@ -4,3 +4,24 @@
   flex-wrap: nowrap;
   margin-top: px-to-rem(180);
 }
+
+@media screen and (max-width: breakpoint(zero-max)) {
+  .main-content__container {
+    margin-top: px-to-rem(200);
+  }
+}
+@media screen and (min-width: breakpoint(extra-small)) and (min-width: breakpoint(extra-small-max)) {
+  .main-content__container {
+    margin-top: px-to-rem(150);
+  }
+}
+@media screen and (max-width: breakpoint(extra-small-max)) {
+  .main-content__container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: breakpoint(small)) {
+  .main-content__container {
+    padding-bottom: px-to-rem(50);
+  }
+}
