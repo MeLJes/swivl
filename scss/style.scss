@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600;700&display=swap');
 
 // --- Helpers
 @import "helpers/variables";
@@ -28,3 +28,22 @@
 @import "components/account/__dropdown/account__dropdown";
 @import "components/account/__controls/account__controls";
 @import "components/navigation/navigation";
+
+// ------ User
+@import "components/user/user";
+/* User: Profile */
+@import "components/user/__profile/user__profile";
+@import "components/user/__avatar/user__avatar";
+/* User: Profile -> Details */
+@import "components/user/__details/user__details";
+@import "components/user/__name/user__name";
+@import "components/user/__id/user__id";
+/* User: Profile -> Edit */
+@import "components/user/__edit/user__edit";
+/* User: Profile -> Actions */
+@import "components/user/__actions/user__actions";
+/* User: Stats */
+@import "components/user/__stats/user__stats";
+@import "components/user/__stat/user__stat";
+/* User: Description */
+@import "components/user/__desc/user__desc";

@@ -1,0 +1,8 @@
+.user__avatar {
+  border-radius: 50%;
+  width: px-to-rem(120);
+  height: px-to-rem(120);
+  margin-right: px-to-rem(24);
+  overflow: hidden; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tcG9uZW50cy91c2VyL19fYXZhdGFyL3VzZXJfX2F2YXRhci5jc3MiLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvdXNlci9fX2F2YXRhci91c2VyX19hdmF0YXIuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIudXNlcl9fYXZhdGFyIHtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgd2lkdGg6IHB4LXRvLXJlbSgxMjApO1xyXG4gIGhlaWdodDogcHgtdG8tcmVtKDEyMCk7XHJcbiAgbWFyZ2luLXJpZ2h0OiBweC10by1yZW0oMjQpO1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsYUFBYSxDQUFDO0VBQ1osYUFBYSxFQUFFLEdBQUc7RUFDbEIsS0FBSyxFQUFFLGNBQWM7RUFDckIsTUFBTSxFQUFFLGNBQWM7RUFDdEIsWUFBWSxFQUFFLGFBQWE7RUFDM0IsUUFBUSxFQUFFLE1BQU0sR0FDakIifQ== */

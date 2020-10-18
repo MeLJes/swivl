@@ -1,0 +1,10 @@
+.user__stat {
+  line-height: px-to-rem(24);
+  text-align: center; }
+  .user__stat .stat__number {
+    font-size: px-to-rem(18);
+    font-weight: weight(bold); }
+  .user__stat .stat__type {
+    font-size: px-to-rem(16); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tcG9uZW50cy91c2VyL19fc3RhdC91c2VyX19zdGF0LmNzcyIsInNvdXJjZXMiOlsiY29tcG9uZW50cy91c2VyL19fc3RhdC91c2VyX19zdGF0LnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLnVzZXJfX3N0YXQge1xyXG4gIGxpbmUtaGVpZ2h0OiBweC10by1yZW0oMjQpO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHJcbiAgLnN0YXRfX251bWJlciB7XHJcbiAgICBmb250LXNpemU6IHB4LXRvLXJlbSgxOCk7XHJcbiAgICBmb250LXdlaWdodDogd2VpZ2h0KGJvbGQpO1xyXG4gIH1cclxuICAuc3RhdF9fdHlwZSB7XHJcbiAgICBmb250LXNpemU6IHB4LXRvLXJlbSgxNik7XHJcbiAgfVxyXG59XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxBQUFBLFdBQVcsQ0FBQztFQUNWLFdBQVcsRUFBRSxhQUFhO0VBQzFCLFVBQVUsRUFBRSxNQUFNLEdBU25CO0VBWEQsQUFJRSxXQUpTLENBSVQsYUFBYSxDQUFDO0lBQ1osU0FBUyxFQUFFLGFBQWE7SUFDeEIsV0FBVyxFQUFFLFlBQVksR0FDMUI7RUFQSCxBQVFFLFdBUlMsQ0FRVCxXQUFXLENBQUM7SUFDVixTQUFTLEVBQUUsYUFBYSxHQUN6QiJ9 */

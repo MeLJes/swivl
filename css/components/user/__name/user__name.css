@@ -1,0 +1,8 @@
+.user__name {
+  font-family: var(--font-secondary);
+  font-size: px-to-rem(24);
+  font-weight: weight(semi-bold);
+  line-height: px-to-rem(26);
+  margin-bottom: px-to-rem(8); }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tcG9uZW50cy91c2VyL19fbmFtZS91c2VyX19uYW1lLmNzcyIsInNvdXJjZXMiOlsiY29tcG9uZW50cy91c2VyL19fbmFtZS91c2VyX19uYW1lLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLnVzZXJfX25hbWUge1xyXG4gIGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LXNlY29uZGFyeSk7XHJcbiAgZm9udC1zaXplOiBweC10by1yZW0oMjQpO1xyXG4gIGZvbnQtd2VpZ2h0OiB3ZWlnaHQoc2VtaS1ib2xkKTtcclxuICBsaW5lLWhlaWdodDogcHgtdG8tcmVtKDI2KTtcclxuICBtYXJnaW4tYm90dG9tOiBweC10by1yZW0oOCk7XHJcbn1cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsV0FBVyxDQUFDO0VBQ1YsV0FBVyxFQUFFLHFCQUFxQjtFQUNsQyxTQUFTLEVBQUUsYUFBYTtFQUN4QixXQUFXLEVBQUUsaUJBQWlCO0VBQzlCLFdBQVcsRUFBRSxhQUFhO0VBQzFCLGFBQWEsRUFBRSxZQUFZLEdBQzVCIn0= */

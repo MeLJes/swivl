@@ -31,7 +31,7 @@
 
       /* Fonts */
       --font-default: 'Open Sans', sans-serif;
-      --font-secondary: 'Arial', sans-serif;
+      --font-secondary: 'Montserrat', sans-serif;
     }
   </style>
 </head>
@@ -65,6 +65,15 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M10.9091 0H9.09091V9.09091H0V10.9091H9.09091V20H10.9091V10.9091H20V9.09091H10.9091V0Z" fill="white" />
       </symbol><!-- #header__add-article -->
+
+      <symbol id="user__edit" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.8963 3.41421C11.6774 2.63316 12.9437 2.63316 13.7248 3.41421L16.5532 6.24264C17.3342 7.02369 17.3342 8.29002 16.5532 9.07107L9.60476 16.0195C9.52246 16.1018 9.41404 16.1528 9.29817 16.1637L5.58247 16.5143C4.32207 16.6332 3.26968 15.566 3.40628 14.3074L3.80158 10.665C3.81388 10.5517 3.86452 10.446 3.94511 10.3654L10.8963 3.41421ZM11.6027 5.53631C11.9932 5.14579 12.6263 5.14579 13.0169 5.53631L14.4311 6.95053C14.8216 7.34105 14.8216 7.97422 14.4311 8.36474L13.7232 9.07263L10.8948 6.2442L11.6027 5.53631ZM9.47978 7.6592L5.9428 11.1962L5.52896 13.2615C5.3887 13.9614 6.00596 14.5787 6.70594 14.4384L8.77123 14.0246L12.3082 10.4876L9.47978 7.6592Z" />
+      </symbol><!-- #user__edit -->
+
+      <symbol id="user__options" viewBox="0 0 16 16">
+
+      </symbol><!-- #user__options -->
     </defs>
   </svg><!-- .svg-sprite -->
 
@@ -159,25 +168,58 @@
           </div><!-- .user__avatar -->
 
           <div class="user__details">
-            <div class="user__name"></div><!-- .user__name -->
+            <h3 class="user__name">Benjamin Clementine</h3><!-- .user__name -->
 
-            <div class="user__id"></div><!-- .user__id -->
+            <h4 class="user__id">@benclementine</h4><!-- .user__id -->
 
-            <div class="user__edit dropdown">
-              <button type="button" class="dropdown__btn"></button>
+            <div class="user__edit">
+              <button type="button" class="user__edit-btn">
+                <svg class="user__edit-icon">
+                  <use xlink:href="#user__edit"></use>
+                </svg>
 
-              <div class="dropdown__list"></div><!-- .dropdown__list -->
+                <span class="user__edit-text">Edit Profile</span>
+              </button>
             </div><!-- .user__edit -->
           </div><!-- .user__details -->
 
-          <div class="user__actions"></div><!-- .user__actions -->
+          <div class="dropdown user__actions">
+            <button type="button" class="dropdown__btn">
+              <svg class="dropdown__btn-icon">
+                <use xlink:href="#user__options"></use>
+              </svg>
+            </button>
+
+            <div class="dropdown__list">
+              <div class="item dropdown__item">
+                <div class="item__icon"></div>
+                <div class="item__text"></div>
+              </div>
+            </div><!-- .dropdown__list -->
+          </div><!-- .user__actions -->
         </div><!-- .user__profile -->
 
-        <div class="user__stats"></div><!-- .user__stats -->
+        <div class="user__stats">
+          <div class="stat user__stat">
+            <div class="stat__number">45</div><!-- .stat__number -->
+            <div class="stat__type">synths</div><!-- .stat__type -->
+          </div><!-- .stat -->
 
-        <div class="user__desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea cupiditate provident maxime quas voluptatem est ad dolore mollitia corporis dicta.
-        </div><!-- .user__desc -->
+          <div class="stat user__stat">
+            <div class="stat__number">110</div><!-- .stat__number -->
+            <div class="stat__type">followers</div><!-- .stat__type -->
+          </div><!-- .stat -->
+
+          <div class="stat user__stat">
+            <div class="stat__number">322</div><!-- .stat__number -->
+            <div class="stat__type">following</div><!-- .stat__type -->
+          </div><!-- .stat -->
+        </div><!-- .user__stats -->
+
+        <p class="user__desc">
+          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to
+          CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+        </p><!-- .user__desc -->
       </aside><!-- .user -->
 
       <section class="articles">

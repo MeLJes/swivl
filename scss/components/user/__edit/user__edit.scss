@@ -1,0 +1,35 @@
+.user__edit {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+
+  &-btn {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+    .user__edit-icon {
+      fill: #E32C75;
+    }
+    .user__edit-text {
+      color: #E32C75;
+    }
+  }
+  }
+  &-icon,
+  &-text {
+    transition: all 0.2s ease-in-out;
+  }
+  &-icon {
+    fill: #F05D63;
+    width: px-to-rem(20);
+    height: px-to-rem(20);
+  }
+  &-text {
+    display: block;
+    color: color(primary);
+    text-decoration: underline;
+    margin-left: px-to-rem(10);
+  }
+}

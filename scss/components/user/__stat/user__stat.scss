@@ -1,0 +1,12 @@
+.user__stat {
+  line-height: px-to-rem(24);
+  text-align: center;
+
+  .stat__number {
+    font-size: px-to-rem(18);
+    font-weight: weight(bold);
+  }
+  .stat__type {
+    font-size: px-to-rem(16);
+  }
+}
